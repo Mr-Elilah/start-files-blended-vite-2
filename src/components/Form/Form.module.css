@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   width: 400px;
   margin: 0 auto;
   position: relative;
@@ -40,4 +41,30 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.msg {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.button svg {
+  transition: transform 0.3s ease;
+}
+
+.button:hover svg {
+  transform: scale(1.2);
+}
+
+.buttonActive {
+  box-shadow: inset 0 0 3px 4px rgba(0, 0, 0, 0.3);
+  transform: scale(1.3);
+  background-color: rgb(93, 224, 73, 0.1);
+}
+.searchMode {
+  position: absolute;
+  top: 60px;
+  color: rgb(83, 222, 62);
+  font-size: 18px;
 }
